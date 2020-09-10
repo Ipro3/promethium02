@@ -7,14 +7,16 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
-# explore: order_items {
-#   join: orders {
-#     relationship: many_to_one
-#     sql_on: ${orders.id} = ${order_items.order_id} ;;
-#   }
-#
-#   join: users {
-#     relationship: many_to_one
-#     sql_on: ${users.id} = ${orders.user_id} ;;
-#   }
-# }
+
+explore: employee{
+  join: employeeaddress {
+    relationship: one_to_one
+    sql_on: ${employee.employee_id} = ${employeeaddress.employee_id} ;;
+  }
+
+  join: address {
+    relationship: one_to_one
+    sql_on:  ${address.address_id} = ${employeeaddress.address_id};;
+  }
+
+}
