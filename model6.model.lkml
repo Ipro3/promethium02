@@ -16,7 +16,8 @@ explore: employee{
 
   join: address {
     relationship: one_to_one
-    sql_on:  ${address.address_id} = ${employeeaddress.address_id};;
+    sql_on:  ${address.address_id} = ${employeeaddress.address_id}
+    and ${address.address_id} = ${employeeaddress.address_id};;
   }
 }
 
