@@ -11,7 +11,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 explore: employee{
   join: employeeaddress {
     relationship: one_to_one
-    sql_on: ${employee.employee_id} = ${employeeaddress.employee_id} ;;
+    sql_on: ${employeeaddress.employee_id} =  ${employee.employee_id} ;;
   }
 
   join: address {
