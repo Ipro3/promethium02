@@ -1,8 +1,9 @@
 
 connection: "pmdevpresto"
 include: "/views/*.view.lkml"
+include: "/views/*/*/*.view.lkml"
 
 
-explore: hivepublic_promethium_dim_agent {
+explore: dim_agent {
 
 }

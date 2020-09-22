@@ -1,5 +1,5 @@
 
-view: hivepublic.promethium.dim_agent {
+view:dim_agent {
 dimension: agent_record_key {
  type: number
  sql: ${TABLE}.agent_record_key;;
