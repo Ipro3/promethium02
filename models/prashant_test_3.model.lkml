@@ -448,5 +448,4 @@ explore: employee {
 #     sql_on: ${workorderrouting.location_id} = ${location.location_id} ;;
 #     relationship: many_to_one
 #   }
-# }
-
+ }
